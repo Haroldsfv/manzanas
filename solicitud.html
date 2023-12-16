@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <form action="soli.php" class="solicitud" method="POST">
+      <h3>¡Agendate!</h3>
+    <h2>Solicitud a Manzana</h2>
+      
+    <select name="localidades" id="localidades" required>
+      <option value="1">Campo Verde</option>
+      <option value="2">Bosa-El Porvenir</option>
+      <option value="3">Ciudad Bolívar - Manitas</option>
+      <option value="4">Ciudad Bolivar - Mochuelos</option>
+      <option value="5">Centro de Bogotá</option>
+      <option value="6">Chapinero</option>
+      <option value="7">Engativá</option>
+      <option value="8">Fontibón</option>
+      <option value="9">Kennedy</option>
+      <option value="10">Los Mártires</option>
+      <option value="11">Puente Aranda</option>
+      <option value="12">Rafael Uribe Uribe</option>
+      <option value="13">San Cristóbal - CEFE</option>
+      <option value="14">San Cristóbal - Juan Rey</option>
+      <option value="15">Suba</option>
+      <option value="16">Teusaquillo</option>
+      <option value="17">Tunjuelito</option>
+      <option value="18">Usme</option>
+      <option value="19">Usaquen</option>
+      <option value="20">Antonio Narino</option>
+  </select>
+  
+        <select name="servicio" required>
+          <option value="">Seleccionar servicio</option>
+          <option value="101">Educación</option>
+          <option value="102">Empleo</option>
+          <option value="103">Emprendimiento</option>
+          <option value="104">Ocio</option>
+          <option value="105">Salud</option>
+          <option value="106">Lavanderia</option>
+          <option value="107">Orientacion</option>
+        </select>
+
+        <input name="dia" type="date" placeholder="dia" required>
+        <input name="hora" type="time" placeholder="hora" required>
+        <button type="submit" value="Enviar">Enviar</button>
+      </form>
+</body>
+</html>
